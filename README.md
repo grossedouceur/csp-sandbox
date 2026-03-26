@@ -2,6 +2,10 @@
 
 An interactive web application for experimenting with [Content-Security-Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) headers.
 
+## Project Status
+
+This project is meant for learning and experimentation. It is **not** intended for production use.
+
 ## Goal
 
 CSP is a browser security mechanism that lets a server declare which resource origins are allowed to load on a page. Debugging CSP rules can be tricky because the feedback loop is slow — you change the header on the server, reload the browser, and hunt through the console for errors.
@@ -77,3 +81,7 @@ csp-sandbox/
 | `PUT`  | `/api/csp` | Sets the CSP; body: `{ "csp": "<directive>" }` |
 
 The CSP is stored in memory and reset when the server restarts.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
